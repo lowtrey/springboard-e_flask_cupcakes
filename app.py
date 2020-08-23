@@ -10,6 +10,10 @@ app.config['SQLALCHEMY_ECHO'] = True
 
 connect_db(app)
 
+@app.route("/")
+def index_page():
+  return render_template("index.html")
+
 @app.route("/api/cupcakes")
 def list_cupcakes():
   all_cupcakes = [cupcake.serialize() for cupcake in Cupcake.query.all()]

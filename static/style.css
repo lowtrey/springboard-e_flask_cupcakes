@@ -1,0 +1,8 @@
+body {
+  padding: 2rem 0rem;
+}
+
+.image-parent img {
+  height: 100px;
+  width: 100px;
+}
